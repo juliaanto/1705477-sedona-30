@@ -5,8 +5,102 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+    <header>
+      <nav>
+        <a href="index.html">
+          <img src="https://via.placeholder.com/138x70" alt="Логотип сайта городка Седона">
+        </a>
+        <a href="#">Информация</a>
+        <a href="#">Фото и видео</a>
+        <a href="#">Карта штата</a>
+        <a>Гостиницы</a>
+      </nav>
+    </header>
+    <main>
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <label><input type="checkbox" name="infrastructure" checked value="swimming_pool">Бассейн</label>
+          <label><input type="checkbox" name="infrastructure" value="parking">Парковка</label>
+          <label><input type="checkbox" name="infrastructure" value="wi_fi">Wi-Fi</label>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <label><input type="checkbox" name="accommodation" checked value="hotel">Гостиница</label>
+          <label><input type="checkbox" name="accommodation" checked value="motel">Мотель</label>
+          <label><input type="checkbox" name="accommodation" checked value="apartments">Апартаменты</label>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость в сутки (Р):</legend>
+          <label>От<input type="text" name="cost_min" value="0"></label>
+          <label>До<input type="text" name="cost_max" value="3000"></label>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
+      <section>
+        Найдено:
+        <!-- output подходит в данном случае? -->
+        <output>3</output>
+        Сортировка:
+        <button type="button">По цене</button>
+        <button type="button">По типу</button>
+        <button type="button">По рейтингу</button>
+        <button type="button">По возрастанию</button>
+        <button type="button">По убыванию</button>
+      </section>
+      <section>
+        <article>
+          <h3>Amara Resort & Spa</h3>
+          <table>
+            <tr>
+              <td>Гостиница</td>
+              <td>От 4000 Р.</td>
+            </tr>
+          </table>
+          <button type="button">Подробнее</button>
+          <button type="button">Забронировать</button>
+          Рейтинг: 8,5
+        </article>
+        <article>
+          <h3>Desert Quail Inn</h3>
+          <table>
+            <tr>
+              <td>Мотель</td>
+              <td>От 3000 Р.</td>
+            </tr>
+          </table>
+          <button type="button">Подробнее</button>
+          <button type="button">Забронировать</button>
+          Рейтинг: 8,9
+        </article>
+        <article>
+          <h3>Villas at Poco Diablo</h3>
+          <table>
+            <tr>
+              <td>Апартаменты</td>
+              <td>От 2000 Р.</td>
+            </tr>
+          </table>
+          <button type="button">Подробнее</button>
+          <button type="button">Забронировать</button>
+          Рейтинг: 9,2
+        </article>
+      </section>
+    </main>
+    <footer>
+      <section>
+        #visitSEDONA<br>
+        ТЕЛ: <a href="tel:+74956660166">+7(495) 666-01-66</a>
+      </section>
+      <section>
+        <a href="#">Твиттер</a>
+        <a href="#">Фейсбук</a>
+        <a href="#">Ютуб</a>
+      </section>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        Website by
+        <img src="https://via.placeholder.com/115x40" alt="Логотип Академии">
+      </a>
+    </footer>
   </body>
 </html>
