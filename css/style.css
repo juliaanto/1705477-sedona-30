@@ -15,3 +15,20 @@
   font-weight: 700;
   font-style: normal;
 }
+
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-extra-dark: #333333;
+  --basic-dark: #666666;
+  --basic-neutral: #E5E5E5;
+  --basic-light: #EEEEEE;
+  --basic-extra-light: #F2F2F2;
+  --basic-white: #FFFFFF;
+
+  --special-blue: #81B3D2;
+  --special-brown: #766357;
+  --special-white: rgba(255, 255, 255, 0.9);
+  --special-grey: #CACACA;
+}
