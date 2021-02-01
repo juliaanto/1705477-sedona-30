@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/icon.svg" type="image/svg+xml">
   </head>
-  <body>
-    <header>
-      <nav>
-        <a>
+  <body class="page-body">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
           <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта городка Седона">
         </a>
         <a href="#">Информация</a>
@@ -18,17 +18,17 @@
         <a href="catalog.html">Гостиницы</a>
       </nav>
     </header>
-    <main>
-      <section>
+    <main class="container">
+      <section class="introduction">
         <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
-      <section>
+      <section class="first-reason">
         <h3>Настоящий городок</h3>
         <p>— №1 —</p>
         <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
       </section>
-      <section>
+      <section class="tips">
         <article>
           <h3>Жильё</h3>
           <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -42,12 +42,12 @@
           <p>Не только китайского, но и местного производства!</p>
         </article>
       </section>
-      <section>
+      <section class="second-reason">
         <h3>Там есть Мост дьявола</h3>
         <p>— №2 —</p>
         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </section>
-      <section>
+      <section class="other-reasons">
         <article>
           <h3>Небольшая площадь</h3>
           <p>— №3 —</p>
@@ -64,53 +64,53 @@
           <p>Большинство едет в гранд каньон и толпится там</p>
         </article>
       </section>
-      <section>
+      <section class="invitation">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button type="submit">Поиск гостиницы в Седоне</button>
+        <button class="button show-form-button" type="submit">Поиск гостиницы в Седоне</button>
       </section>
-      <section>
+      <section class="hotel-search">
         <form action="#" method="POST">
-          <div>
+          <div class="search-date">
             <label>Дата заезда:
               <input type="text" value="24 апреля 2017">
             </label>
-            <button type="button">+</button>
+            <button class="button form-button" type="button">+</button>
           </div>
-          <div>
+          <div class="search-date">
             <label>Дата выезда:
               <input type="text" value="4 июля 2017">
             </label>
-            <button type="button">+</button>
+            <button class="button form-button" type="button">+</button>
           </div>
-          <div>
+          <div class="search-persons">
             <label for="adult_amount">Взрослые:</label>
-            <button type="button">-</button>
+            <button class="button form-button" type="button">-</button>
             <input type="number" value="2" id="adult_amount">
-            <button type="button">+</button>
+            <button class="button form-button" type="button">+</button>
             <label for="child_amount">Дети:</label>
-            <button type="button">-</button>
+            <button class="button form-button" type="button">-</button>
             <input type="number" value="0" id="child_amount">
-            <button type="button">+</button>
+            <button class="button form-button" type="button">+</button>
           </div>
-          <button type="submit">Найти</button>
+          <button class="button search-button" type="submit">Найти</button>
         </form>
         <img src="img/map.jpg" width="1199" height="594" alt="Карта">
       </section>
     </main>
-    <footer>
-      <section>
+    <footer class="main-footer">
+      <section class="footer-contacts">
         #visitSEDONA<br>
-        ТЕЛ: <a href="tel:+74956660166">+7(495) 666-01-66</a>
+        ТЕЛ: <a class="footer-phone" href="tel:+74956660166">+7(495) 666-01-66</a>
       </section>
-      <section>
-        <a href="#">Твиттер</a>
-        <a href="#">Фейсбук</a>
-        <a href="#">Ютуб</a>
+      <section class="footer-social">
+        <a class="social-button" href="#">Твиттер</a>
+        <a class="social-button" href="#">Фейсбук</a>
+        <a class="social-button" href="#">Ютуб</a>
       </section>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
+      <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">
         Website by
-        <img src="img/logo_htmlacademy.svg" width="115" height="41" alt="Логотип Академии">
+        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип Академии">
       </a>
     </footer>
   </body>
