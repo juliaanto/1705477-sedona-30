@@ -28,7 +28,257 @@
   --basic-white: #FFFFFF;
 
   --special-blue: #81B3D2;
+  --special-blue-hover: #669EC0;
+  --special-blue-active: #5496BD;
   --special-brown: #766357;
-  --special-white: rgba(255, 255, 255, 0.9);
+  --special-brown-hover: #604E43;
+  --special-brown-active: #503E33;
   --special-grey: #CACACA;
+  --special-white: rgba(255, 255, 255, 0.3);
+  --special-white-hover:#EBEBEB;
+}
+
+/* Global */
+
+body {
+  min-width: 960px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--basic-extra-dark);
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation a {
+  line-height: 1.86;
+  color: var(--basic-black);
+  font-weight: 700;
+}
+
+.main-navigation a:hover {
+  color: var(--special-blue);
+}
+
+.main-navigation a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+/* Introduction */
+
+.container-index {
+  background-image: url("../img/welcome.png"), url("../img/shape.svg"), url("../img/mountains.jpg");
+  background-position: center 77px, center 452px, center top;
+  background-repeat: no-repeat;
+  padding-top: 509px;
+}
+
+.introduction {
+  color: var(--basic-black);
+}
+
+.introduction h1 {
+  font-size: 21px;
+  line-height: 1.24;
+}
+
+.introduction p {
+  font-size: 14px;
+  line-height: 1.86;
+  color: var(--basic-extra-dark);
+}
+
+/* Reasons & tips */
+
+.first-reason,
+.second-reason {
+  background-color: var(--special-blue);
+  color: var(--basic-white);
+}
+
+.first-reason {
+  background-image: url("../img/town.jpg");
+  background-repeat: no-repeat;
+  background-position: 440px top;
+  padding-right: 850px;
+  padding-left: 52px;
+  padding-top: 47px;
+  padding-bottom: 54px;
+}
+
+.container-index h3 {
+  font-size: 21px;
+  line-height: 1;
+}
+
+.tips h3,
+.other-reasons h3{
+  color: var(--basic-black);
+}
+
+.tips {
+  padding: 60px;
+}
+
+.house {
+  background-image: url("../img/house.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 70px;
+}
+
+.food {
+  background-image: url("../img/food.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 70px;
+}
+
+.souvenirs {
+  background-image: url("../img/souvenir.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 70px;
+}
+
+.second-reason {
+  background-image: url("../img/devils-bridge.jpg");
+  background-repeat: no-repeat;
+  background-position: 40px top;
+  padding-right: 52px;
+  padding-left: 850px;
+  padding-top: 47px;
+  padding-bottom: 54px;
+}
+
+.other-reasons {
+  background-color: var(--basic-light);
+}
+
+/* Hotel search */
+
+.invitation h2 {
+  font-size: 30px;
+  line-height: 0.8;
+}
+
+.invitation p {
+  line-height: 1.71;
+}
+
+.button {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.24;
+  border: none;
+  color: var(--basic-white);
+}
+
+.show-form-button {
+  background-color: var(--special-brown);
+  padding: 30px 125px;
+}
+
+.show-form-button:hover {
+  background-color: var(--special-brown-hover);
+}
+
+  /* При нажатии появляются границы кнопки, почему так? */
+.show-form-button:active {
+  background-color: var(--special-brown-active);
+  color: var(--special-white);
+}
+
+.hotel-search {
+  font-weight: 700;
+  text-align: left;
+  padding-left: 55px;
+  line-height: 1.86;
+}
+
+.hotel-search input {
+  background-color: var(--basic-extra-light);
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  line-height: 1.86;
+}
+
+.search-date input {
+  padding: 6px 13px;
+  margin-top: 15px;
+}
+
+.search-date input:hover {
+  background-color: var(--special-white-hover);
+}
+
+.search-date input:focus {
+  background-color: var(--basic-neutral);
+}
+
+.search-persons input {
+  padding: 6px;
+  line-height: 1.86;
+  margin-top: 15px;
+}
+
+.search-button {
+  background-color: var(--special-blue);
+  padding: 16px 182px;
+}
+
+.search-button:hover {
+  background-color: var(--special-blue-hover);
+}
+
+.search-button:active {
+  background-color: var(--special-blue-active);
+  color: var(--special-white);
+}
+
+.form-button {
+  border: none;
+}
+
+/* Main footer */
+
+.footer-contacts {
+  font-weight: 700;
+  font-size: 21px;
+  color: var(--basic-black);
+  line-height: 1.24;
+}
+
+.footer-contacts a {
+  color: var(--basic-black);
+}
+
+.social-button rect:hover {
+  fill: var(--special-blue-hover);
+}
+
+.social-button rect:active {
+  fill: var(--special-blue-active);
+}
+
+.footer-copyright {
+  line-height: 1.86;
+  color: var(--basic-black);
 }
