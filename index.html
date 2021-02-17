@@ -14,10 +14,10 @@
         <a class="main-header-logo">
           <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта городка Седона">
         </a>
-        <a href="#">Информация</a>
-        <a href="#">Фото и видео</a>
-        <a href="#">Карта штата</a>
-        <a href="catalog.html">Гостиницы</a>
+        <a class="navigation-left" href="#">Информация</a>
+        <a class="navigation-left" href="#">Фото и видео</a>
+        <a class="navigation-right" href="#">Карта штата</a>
+        <a class="navigation-right" href="catalog.html">Гостиницы</a>
       </nav>
     </header>
     <main class="container container-index">
@@ -26,10 +26,11 @@
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
       <section class="first-reason">
-        <h3>Настоящий городок</h3>
-        <p>— №1 —</p>
-        <p>Седона - не аттракцион для туристов,<br> там течёт своя жизнь</p>
+          <h3>Настоящий городок</h3>
+          <p>— №1 —</p>
+          <p>Седона - не аттракцион для туристов,<br> там течёт своя жизнь</p>
       </section>
+      <div class="picture-town"></div>
       <section class="tips">
         <article class="house">
           <h3>Жильё</h3>
@@ -49,18 +50,19 @@
         <p>— №2 —</p>
         <p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
       </section>
+      <div class="picture-bridge"></div>
       <section class="other-reasons">
-        <article>
+        <article class="third-reason">
           <h3>Небольшая площадь</h3>
           <p>— №3 —</p>
           <p>Все достопримечательности находятся очень близко</p>
         </article>
-        <article>
+        <article class="fourth-reason">
           <h3>Красивая дорога</h3>
           <p>— №4 —</p>
           <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
         </article>
-        <article>
+        <article class="fifth-reason">
           <h3>Мало туристов</h3>
           <p>— №5 —</p>
           <p>Большинство едет в гранд каньон и толпится там</p>
@@ -68,7 +70,7 @@
       </section>
       <section class="invitation">
         <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="button show-form-button" type="submit">Поиск гостиницы в Седоне</button>
       </section>
       <section class="hotel-search">
@@ -101,40 +103,42 @@
       </section>
     </main>
     <footer class="main-footer">
-      <section class="footer-contacts">
-        #visitSEDONA<br>
-        ТЕЛ: <a class="footer-phone" href="tel:+74956660166">+7(495) 666-01-66</a>
-      </section>
-      <section class="footer-social">
-        <a class="social-button" href="#">Твиттер
-          <svg width="46" height="48" viewBox="0 0 46 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="46" height="48" fill="var(--special-blue)"/>
-            <g transform="translate(15, 15)">
-              <path class="button-picture" d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z" fill="var(--basic-white)"/>
-            </g>
-          </svg>
+      <div class="container">
+        <section class="footer-contacts">
+          #visitSEDONA<br>
+          ТЕЛ: <a class="footer-phone" href="tel:+74956660166">+7(495) 666-01-66</a>
+        </section>
+        <section class="footer-social">
+          <a class="social-button" href="#">Твиттер
+            <svg width="46" height="48" viewBox="0 0 46 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="46" height="48" fill="var(--special-blue)"/>
+              <g transform="translate(15, 15)">
+                <path class="button-picture" d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z" fill="var(--basic-white)"/>
+              </g>
+            </svg>
+          </a>
+          <a class="social-button" href="#">Фейсбук
+            <svg width="46" height="48" viewBox="0 0 46 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="46" height="48" fill="var(--special-blue)"/>
+              <g transform="translate(17, 13)">
+                <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="var(--basic-white)"/>
+              </g>
+            </svg>
+          </a>
+          <a class="social-button" href="#">Ютуб
+            <svg width="46" height="48" viewBox="0 0 46 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="46" height="48" fill="var(--special-blue)"/>
+              <g transform="translate(13, 16)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="var(--basic-white)"/>
+              </g>
+            </svg>
+          </a>
+        </section>
+        <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">
+          Website by
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип Академии">
         </a>
-        <a class="social-button" href="#">Фейсбук
-          <svg width="46" height="48" viewBox="0 0 46 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="46" height="48" fill="var(--special-blue)"/>
-            <g transform="translate(17, 13)">
-              <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="var(--basic-white)"/>
-            </g>
-          </svg>
-        </a>
-        <a class="social-button" href="#">Ютуб
-          <svg width="46" height="48" viewBox="0 0 46 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="46" height="48" fill="var(--special-blue)"/>
-            <g transform="translate(13, 16)">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="var(--basic-white)"/>
-            </g>
-          </svg>
-        </a>
-      </section>
-      <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">
-        Website by
-        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип Академии">
-      </a>
+      </div>
     </footer>
   </body>
 </html>

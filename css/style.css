@@ -42,7 +42,7 @@
 /* Global */
 
 body {
-  min-width: 960px;
+  min-width: 1200px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -51,6 +51,10 @@ body {
   text-transform: uppercase;
   text-align: center;
   background-color: var(--basic-white);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 a {
@@ -62,7 +66,21 @@ img {
   height: auto;
 }
 
+/* Grid */
+
+.page {
+  height: 100%;
+}
+
 /* Main navigation */
+
+.main-navigation {
+  display: grid;
+  width: 1200px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .main-navigation a {
   line-height: 1.86;
@@ -79,9 +97,28 @@ img {
   opacity: 0.3;
 }
 
+.main-navigation a:nth-child(4),
+.main-navigation a:nth-child(5) {
+  order: 2;
+}
+
+/* Logo */
+
+.main-header-logo {
+  order: 1;
+}
+
 /* Introduction */
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .container-index {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: min-content min-content 256px 330px 256px 256px auto;
   background-image: url("../img/welcome.png"), url("../img/shape.svg"), url("../img/mountains.jpg");
   background-position: center 77px, center 452px, center top;
   background-repeat: no-repeat;
@@ -96,11 +133,15 @@ img {
 
 .introduction {
   color: var(--basic-black);
+  grid-column: 1 / -1;
+  min-height: 215px;
 }
 
 .introduction h1 {
   font-size: 21px;
   line-height: 1.24;
+  padding: 42px 365px 0;
+  height: 80px;
 }
 
 .introduction p {
@@ -115,16 +156,26 @@ img {
 .second-reason {
   background-color: var(--special-blue);
   color: var(--basic-white);
+  width: 400px;
+  height: 256px;
 }
 
 .first-reason {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.first-reason h3 {
+  padding: 26px 139px 0;
+}
+
+.picture-town {
   background-image: url("../img/town.jpg");
   background-repeat: no-repeat;
-  background-position: 440px top;
-  padding-right: 850px;
-  padding-left: 52px;
-  padding-top: 47px;
-  padding-bottom: 54px;
+  min-height: 256px;
+  min-width: 700px;
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
 }
 
 .container-index h3 {
@@ -138,53 +189,107 @@ img {
 }
 
 .tips {
-  padding: 60px;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-row: 4 / 5;
+  padding-top: 60px;
 }
 
 .house {
   background-image: url("../img/house.svg");
   background-repeat: no-repeat;
   background-position: center top;
-  padding-top: 70px;
+  padding: 70px 73px 0;
+  grid-column: 1 / 2;
 }
 
 .food {
   background-image: url("../img/food.svg");
   background-repeat: no-repeat;
   background-position: center top;
-  padding-top: 70px;
+  padding: 70px 51px 0;
+  grid-column: 2 / 3;
 }
 
 .souvenirs {
   background-image: url("../img/souvenir.svg");
   background-repeat: no-repeat;
   background-position: center top;
-  padding-top: 70px;
+  padding: 70px 65px 0;
+  grid-column: 3 / 4;
+}
+
+.picture-bridge {
+  background-image: url("../img/devils-bridge.jpg");
+  background-repeat: no-repeat;
+  min-height: 256px;
+  min-width: 700px;
+  grid-row: 5 / 6;
+  grid-column: 1 / -1;
 }
 
 .second-reason {
-  background-image: url("../img/devils-bridge.jpg");
-  background-repeat: no-repeat;
-  background-position: 40px top;
-  padding-right: 52px;
-  padding-left: 850px;
-  padding-top: 47px;
-  padding-bottom: 54px;
+  grid-column: 3 / 4;
+  grid-row: 5 / 6;
 }
 
+.second-reason h3 {
+  padding: 26px 125px 0;
+  }
+
 .other-reasons {
+  grid-row: 6 / 7;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+}
+
+.third-reason {
+  grid-column: 1 / 2;
   background-color: var(--basic-light);
+  padding: 0 96px;
+
+}
+
+.fourth-reason {
+  grid-column: 2 / 3;
+  background-color: var(--basic-light);
+  padding: 0 71px;
+}
+
+.fifth-reason {
+  grid-column: 3 / 4;
+  background-color: var(--basic-light);
+  padding: 0 77px;
+}
+
+.other-reasons h3 {
+  padding: 26px 47px 0;
 }
 
 /* Hotel search */
 
+
+.invitation {
+
+  grid-row: 7 / 8;
+  grid-column: 1 / -1;
+}
+
+.hotel-search {
+  grid-row: 8 / 9;
+  grid-column: 1 / -1;
+}
+
+
 .invitation h2 {
   font-size: 30px;
   line-height: 0.8;
+  padding-top: 34px;
 }
 
 .invitation p {
   line-height: 1.71;
+  padding: 4px 382px 24px;
 }
 
 .button {
@@ -205,7 +310,6 @@ img {
   background-color: var(--special-brown-hover);
 }
 
-  /* При нажатии появляются границы кнопки, почему так? */
 .show-form-button:active {
   background-color: var(--special-brown-active);
   color: var(--special-white);
@@ -391,11 +495,23 @@ img {
 
 /* Main footer */
 
+.main-footer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .footer-contacts {
   font-weight: 700;
   font-size: 21px;
   color: var(--basic-black);
   line-height: 1.24;
+  grid-column: 1 / 2;
+  padding: 23px 0 36px;
+}
+
+.footer-social {
+  grid-column: 2 / 3;
+  padding: 36px 0;
 }
 
 .footer-contacts a {
@@ -413,4 +529,5 @@ img {
 .footer-copyright {
   line-height: 1.86;
   color: var(--basic-black);
+  padding-top: 40px;
 }
