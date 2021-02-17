@@ -368,10 +368,21 @@ img {
   border: none;
 }
 
+/* Catalog */
+
+.container-catalog {
+  display: grid;
+  grid-template-rows: 217px 86px auto;
+}
+
 /* Filters */
 
 .filters {
   color: var(--basic-white);
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  margin-top: 26px;
 }
 
 .filters legend {
@@ -380,11 +391,30 @@ img {
   line-height: 1.31;
 }
 
+.infrastructure {
+  margin-left: 73px;
+  text-align: start;
+  display: grid;
+}
+
+.accommodation {
+  margin-left: 26px;
+  text-align: start;
+  display: grid;
+}
+
+.cost {
+  text-align: start;
+  margin-right: 73px;
+  margin-left: auto;
+}
+
 .filter-button {
   background-color: transparent;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
+  grid-column: 3 / 4;
 }
 
 .filter-button:hover {
@@ -395,21 +425,31 @@ img {
 /* Sorting */
 
 .sorting {
-  padding-top: 50px;
   font-size: 12px;
   color: var(--basic-black);
+  grid-row: 2 / 3;
+  margin-left: 73px;
+  margin-right: 73px;
+  display: grid;
+  grid-template-columns: min-content min-content auto 80px 80px 80px 50%;
+}
 
+.sorting-title {
+  margin: auto 0;
 }
 
 .container-catalog h3 {
   font-size: 21px;
   line-height: 1.24;
   color: var(--basic-black);
+  margin: 0;
 }
 
 .sorting a {
   color: var(--special-black);
   text-decoration: underline dotted var(--special-blue);
+  margin: auto 0;
+  justify-self: left;
 }
 
 .sorting a:hover {
@@ -430,11 +470,62 @@ img {
   fill: var(--special-blue);
 }
 
+.found {
+  grid-column: 1 / 2;
+  margin: auto 0;
+  padding-top: 30px;
+}
+
+.amount {
+  grid-column: 2 / 3;
+  text-align: left;
+  margin: auto 0;
+  padding-top: 30px;
+  padding-left: 5px;
+}
+
+.asc-desc {
+  justify-self: end;
+  margin: auto 0;
+}
+
 /* Hotels */
+
+.hotels {
+  grid-row: 3 / 4;
+}
+
+.hotel {
+  display: grid;
+  grid-template-columns: 135px 30px 110px 5px 142px auto 110px;
+  grid-template-rows: min-content 44px 27px;
+  margin: 30px 73px 60px;
+}
+
+.hotel-name {
+  grid-row: 1 / 2;
+  grid-column: 3 / -2;
+  justify-self: start;
+}
+
+.hotel-type {
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+  justify-self: left;
+  margin: auto 0;
+}
+
+.hotel-price {
+  grid-row: 2 / 3;
+  grid-column: 5 / 6;
+  justify-self: left;
+  margin: auto 0;
+}
 
 .hotel-amara {
   background-image: url("../img/amara-resort-spa.jpg");
   background-repeat: no-repeat;
+  grid-row: 1 / -1;
 }
 
 .hotel-desert {
@@ -455,6 +546,10 @@ img {
 .more {
   background-color: var(--special-blue);
   padding: 3px 16px;
+  grid-row: -1 / -2;
+  grid-column: 3 / 4;
+  margin: auto;
+  justify-self: start;
 }
 
 .more:hover {
@@ -469,6 +564,9 @@ img {
 .book {
   background-color: var(--special-brown);
   padding: 3px 16px;
+  grid-row: -1 / -2;
+  grid-column: 5 / 6;
+  margin: auto 0;
 }
 
 .book:hover {
@@ -480,9 +578,18 @@ img {
   color: var(--special-white);
 }
 
+.stars {
+  grid-column: -1 / -2;
+  justify-self: end;
+}
+
 .rating {
   background-color: var(--basic-extra-light);
   color: var(--basic-dark);
+  grid-column: -1 / -2;
+  grid-row: -1 / -2;
+  margin: auto 0;
+  padding: 3px 12px 3px 15px;
 }
 
 .hotels h3:hover {
