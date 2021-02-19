@@ -75,9 +75,8 @@ img {
 /* Main navigation */
 
 .main-navigation {
-  display: grid;
+  display: flex;
   width: 1200px;
-  grid-template-columns: repeat(5, 1fr);
   margin-left: auto;
   margin-right: auto;
 }
@@ -86,6 +85,8 @@ img {
   line-height: 1.86;
   color: var(--basic-black);
   font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-navigation a:hover {
@@ -189,10 +190,10 @@ img {
 }
 
 .tips {
-  display: grid;
-  grid-template-columns: repeat(3, 400px);
   grid-row: 4 / 5;
+  grid-column: 1 / -1;
   padding-top: 60px;
+  display: flex;
 }
 
 .house {
@@ -200,7 +201,6 @@ img {
   background-repeat: no-repeat;
   background-position: center top;
   padding: 70px 73px 0;
-  grid-column: 1 / 2;
 }
 
 .food {
@@ -208,7 +208,6 @@ img {
   background-repeat: no-repeat;
   background-position: center top;
   padding: 70px 51px 0;
-  grid-column: 2 / 3;
 }
 
 .souvenirs {
@@ -216,7 +215,6 @@ img {
   background-repeat: no-repeat;
   background-position: center top;
   padding: 70px 65px 0;
-  grid-column: 3 / 4;
 }
 
 .picture-bridge {
@@ -239,25 +237,21 @@ img {
 
 .other-reasons {
   grid-row: 6 / 7;
-  display: grid;
-  grid-template-columns: repeat(3, 400px);
+  grid-column: 1 / -1;
+  display: flex;
 }
 
 .third-reason {
-  grid-column: 1 / 2;
   background-color: var(--basic-light);
   padding: 0 96px;
-
 }
 
 .fourth-reason {
-  grid-column: 2 / 3;
   background-color: var(--basic-light);
   padding: 0 71px;
 }
 
 .fifth-reason {
-  grid-column: 3 / 4;
   background-color: var(--basic-light);
   padding: 0 77px;
 }
@@ -603,8 +597,7 @@ img {
 /* Main footer */
 
 .main-footer .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
 }
 
 .footer-contacts {
@@ -612,13 +605,13 @@ img {
   font-size: 21px;
   color: var(--basic-black);
   line-height: 1.24;
-  grid-column: 1 / 2;
   padding: 23px 0 36px;
+  margin: 0 auto;
 }
 
 .footer-social {
-  grid-column: 2 / 3;
   padding: 36px 0;
+  margin: 0 auto;
 }
 
 .footer-contacts a {
@@ -637,4 +630,5 @@ img {
   line-height: 1.86;
   color: var(--basic-black);
   padding-top: 40px;
+  margin: 0 auto;
 }
