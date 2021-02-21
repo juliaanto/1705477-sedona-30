@@ -79,6 +79,7 @@ img {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
 }
 
 .main-navigation a {
@@ -119,7 +120,7 @@ img {
 .container-index {
   display: grid;
   grid-template-columns: repeat(3, 400px);
-  grid-template-rows: min-content min-content 256px 330px 256px 256px auto;
+  grid-template-rows: min-content min-content 256px auto 256px 256px auto;
   background-image: url("../img/welcome.png"), url("../img/shape.svg"), url("../img/mountains.jpg");
   background-position: center 77px, center 452px, center top;
   background-repeat: no-repeat;
@@ -194,27 +195,30 @@ img {
   grid-column: 1 / -1;
   padding-top: 60px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tip {
+  background-repeat: no-repeat;
+  background-position: center top;
+  box-sizing: border-box;
+  width: 400px;
 }
 
 .house {
   background-image: url("../img/house.svg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  padding: 70px 73px 0;
+  padding: 70px 73px 80px;
 }
 
 .food {
   background-image: url("../img/food.svg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  padding: 70px 51px 0;
+  padding: 70px 51px 80px;
 }
 
 .souvenirs {
   background-image: url("../img/souvenir.svg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  padding: 70px 65px 0;
+  padding: 70px 65px 80px;
 }
 
 .picture-bridge {
