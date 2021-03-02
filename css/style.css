@@ -667,6 +667,13 @@ img {
   min-height: 120px;
 }
 
+.catalog-footer .container {
+  display: flex;
+  align-items: center;
+  background-color: var(--special-white-footer);
+  min-height: 120px;
+}
+
 .footer-contacts {
   font-weight: 700;
   font-size: 21px;
