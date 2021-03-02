@@ -427,19 +427,14 @@ img {
 
 /* Catalog */
 
-.container-catalog {
-  display: grid;
-  grid-template-rows: 217px 86px auto;
-}
-
 /* Filters */
 
 .filters {
   color: var(--basic-white);
-  grid-row: 1 / 2;
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
   margin-top: 26px;
+  height: 217px;
 }
 
 .filters legend {
@@ -484,15 +479,16 @@ img {
 .sorting {
   font-size: 12px;
   color: var(--basic-black);
-  grid-row: 2 / 3;
   margin-left: 73px;
   margin-right: 73px;
-  display: grid;
-  grid-template-columns: min-content min-content auto 80px 80px 80px 50%;
+  display: flex;
+  min-height: 86px;
+  align-items: center;
+  text-align: left;
 }
 
 .sorting-title {
-  margin: auto 0;
+  min-width: 115px;
 }
 
 .container-catalog h3 {
@@ -502,11 +498,16 @@ img {
   margin: 0;
 }
 
+.sorting .current-sorting {
+  color: var(--special-blue);
+  text-decoration: none;
+}
+
 .sorting a {
   color: var(--special-black);
   text-decoration: underline dotted var(--special-blue);
-  margin: auto 0;
   justify-self: left;
+  min-width: 80px;
 }
 
 .sorting a:hover {
@@ -528,22 +529,25 @@ img {
 }
 
 .found {
-  grid-column: 1 / 2;
-  margin: auto 0;
-  padding-top: 30px;
+  min-width: 163px;
 }
 
 .amount {
-  grid-column: 2 / 3;
   text-align: left;
-  margin: auto 0;
-  padding-top: 30px;
-  padding-left: 5px;
 }
 
-.asc-desc {
-  justify-self: end;
-  margin: auto 0;
+.asc {
+  fill: var(--special-grey);
+  margin-left: auto;
+}
+
+.desc {
+  fill: var(--special-grey);
+  margin-left: 12px;
+}
+
+.current-sorting {
+  fill: var(--special-blue);
 }
 
 /* Hotels */

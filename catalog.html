@@ -42,20 +42,21 @@
         </div>
       </form>
       <section class="sorting">
-        <h3 class="found">Найдено:</h3>
-        <h3 class="amount"><output>3</output></h3>
+        <h3 class="found">Найдено: <output>3</output></h3>
         <div class="sorting-title">Сортировка:</div>
-        <a href="#">По цене</a>
+        <a class="current-sorting" href="#">По цене</a>
         <a href="#">По типу</a>
         <a href="#">По рейтингу</a>
-        <div class="asc-desc">
+        <div class="asc">
           <a class="visually-hidden" href="#">По возрастанию</a>
-          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5.5 0L0 10H11L5.5 0Z" fill="var(--special-grey)"/>
+          <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.5 0L0 10H11L5.5 0Z"/>
           </svg>
+        </div>
+        <div class="desc current-sorting">
           <a class="visually-hidden" href="#">По убыванию</a>
-          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5.5 10L0 0H11" fill="var(--special-blue)"/>
+          <svg cwidth="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.5 10L0 0H11"/>
           </svg>
         </div>
       </section>
