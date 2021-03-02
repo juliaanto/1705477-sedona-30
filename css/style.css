@@ -124,6 +124,10 @@ img {
   order: 2;
 }
 
+.main-navigation .current-section {
+  color: var(--special-brown);
+}
+
 /* Logo */
 
 .main-header-logo {
