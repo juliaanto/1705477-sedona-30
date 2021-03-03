@@ -22,15 +22,21 @@
       <form class="filters" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="infrastructure">
           <legend>Инфраструктура:</legend>
-          <label><input type="checkbox" name="infrastructure" checked value="swimming_pool">Бассейн</label>
-          <label><input type="checkbox" name="infrastructure" value="parking">Парковка</label>
-          <label><input type="checkbox" name="infrastructure" value="wi_fi">Wi-Fi</label>
+          <input class="visually-hidden filter-input-checkbox" type="checkbox" name="infrastructure" id="filter-swimming-pool" checked value="swimming_pool">
+          <label for="filter-swimming-pool">Бассейн</label>
+          <input class="visually-hidden filter-input-checkbox" type="checkbox" name="infrastructure" id="filter-parking" value="parking">
+          <label for="filter-parking">Парковка</label>
+          <input class="visually-hidden filter-input-checkbox" type="checkbox" name="infrastructure" id="filter-wi-fi" value="wi_fi">
+          <label for="filter-wi-fi">Wi-Fi</label>
         </fieldset>
         <fieldset class="accommodation">
           <legend>Тип жилья:</legend>
-          <label><input type="checkbox" name="accommodation" checked value="hotel">Гостиница</label>
-          <label><input type="checkbox" name="accommodation" checked value="motel">Мотель</label>
-          <label><input type="checkbox" name="accommodation" checked value="apartments">Апартаменты</label>
+          <input class="visually-hidden filter-input-checkbox" type="checkbox" name="accommodation" id="filter-hotel" checked value="hotel">
+          <label for="filter-hotel">Гостиница</label>
+          <input class="visually-hidden filter-input-checkbox" type="checkbox" name="accommodation" id="filter-motel" checked value="motel">
+          <label for="filter-motel">Мотель</label>
+          <input class="visually-hidden filter-input-checkbox" type="checkbox" name="accommodation" id="filter-apartments" checked value="apartments">
+          <label for="filter-apartments">Апартаменты</label>
         </fieldset>
         <div class="cost">
           <fieldset>

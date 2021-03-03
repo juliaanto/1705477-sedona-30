@@ -431,32 +431,71 @@ img {
 
 .filters {
   color: var(--basic-white);
-  display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
-  margin-top: 26px;
+  display: flex;
   height: 217px;
+}
+
+.filters fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
 }
 
 .filters legend {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
+  padding-top: 27px;
 }
 
-.infrastructure {
-  margin-left: 73px;
-  text-align: start;
-  display: grid;
+.filters .infrastructure {
+  padding-left: 73px;
+  text-align: left;
+  min-width: 255px;
+}
+
+.infrastructure label,
+.accommodation label {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+  padding-left: 40px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox:not(:checked) + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 24px;
+  width: 19px;
+  height: 19px;
+  border: 2px solid var(--basic-white);
+  border-radius: 3px;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 0;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .accommodation {
   margin-left: 26px;
-  text-align: start;
-  display: grid;
+  text-align: left;
 }
 
 .cost {
-  text-align: start;
+  text-align: left;
   margin-right: 73px;
   margin-left: auto;
 }
@@ -466,7 +505,6 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  grid-column: 3 / 4;
 }
 
 .filter-button:hover {
