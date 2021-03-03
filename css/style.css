@@ -100,6 +100,7 @@ img {
 .main-navigation {
   display: flex;
   align-items: center;
+  height: 55px;
 }
 
 .main-navigation a {
@@ -131,7 +132,9 @@ img {
 /* Logo */
 
 .main-header-logo {
+  height: 60px;
   order: 1;
+  z-index: 1;
 }
 
 /* Introduction */
