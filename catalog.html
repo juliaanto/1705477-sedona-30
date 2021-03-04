@@ -38,13 +38,38 @@
           <input class="visually-hidden filter-input-checkbox" type="checkbox" name="accommodation" id="filter-apartments" checked value="apartments">
           <label for="filter-apartments">Апартаменты</label>
         </fieldset>
-        <div class="cost">
+        <div class="price">
           <fieldset>
             <legend>Стоимость в сутки (Р):</legend>
-            <label>От<input type="text" name="cost_min" value="0"></label>
-            <label>До<input type="text" name="cost_max" value="3000"></label>
+            <div class="range-filter">
+              <div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    От <input type="text" name="price_min" value="0" id="filter-price-min">
+                  </label>
+                  <label class="max-price">
+                    До <input type="text" name="price_max" value="3000" id="filter-price-max">
+                  </label>
+                  </div>
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="
+                      width: 80%;
+                      margin-left: 0%
+                    "></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0" style="
+                    left: 0%
+                  "></div>
+                  <div class="toggle toggle-max" tabindex="0" style="
+                    left: 80%
+                  "></div>
+                </div>
+              </div>
+              <button class="button filter-button" type="submit">Показать</button>
+            </div>
           </fieldset>
-          <button class="button filter-button" type="submit">Показать</button>
         </div>
       </form>
       <section class="sorting">

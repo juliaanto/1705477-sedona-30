@@ -459,8 +459,6 @@ img {
 
 .infrastructure label,
 .accommodation label {
-  display: flex;
-  flex-direction: column;
   padding-top: 24px;
   padding-left: 40px;
   position: relative;
@@ -497,10 +495,87 @@ img {
   text-align: left;
 }
 
-.cost {
+.price {
   text-align: left;
   margin-right: 73px;
   margin-left: auto;
+  width: 317px;
+  height: 36px;
+}
+
+.price legend {
+  margin-bottom: 11px;
+}
+
+.price-controls {
+  border: 2px solid var(--basic-white);
+  height: 33px;
+  display: flex;
+  align-items: center;
+}
+
+.price-controls label {
+  height: 22px;
+}
+
+.price-controls input {
+  background-color: transparent;
+  border: none;
+  color: var(--basic-white);
+  width: 66px;
+}
+
+.min-price {
+  margin-left: 65px;
+  border-right: 2px solid var(--basic-white);
+}
+
+.max-price {
+  margin-left: 50px;
+}
+
+.range-filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.range-controls {
+  position: relative;
+  height: 20px;
+  padding-top: 20px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: var(--special-white);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: var(--basic-white);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 0px;
+}
+
+.range-controls .toggle-max {
+  left: 280px;
 }
 
 .filter-button {
@@ -508,6 +583,11 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
+  border: 2px solid var(--basic-white);
+  width: 137px;
+  height: 36px;
+  margin-left: 85px;
+  margin-top: 13px;
 }
 
 .filter-button:hover {
