@@ -176,7 +176,7 @@ img {
 .description {
   display: grid;
   grid-template-columns: repeat(3, 400px);
-  grid-template-rows: 256px auto 256px 256px;
+  grid-template-rows: repeat(4, auto);
 }
 
 .first-reason,
@@ -184,7 +184,6 @@ img {
   background-color: var(--special-blue);
   color: var(--basic-white);
   width: 400px;
-  height: 256px;
 }
 
 .first-reason {
@@ -193,13 +192,18 @@ img {
 }
 
 .first-reason h3 {
-  padding: 26px 139px 0;
+  padding: 26px 139px 10px;
+}
+
+.first-reason p:nth-of-type(2) {
+  margin: 0;
+  padding: 11px 40px 50px;
 }
 
 .picture-town {
   background-image: url("../img/town.jpg");
   background-repeat: no-repeat;
-  min-height: 256px;
+  background-size: cover;
   min-width: 700px;
   grid-column: 2 / 4;
   grid-row: 1 / 2;
@@ -219,6 +223,7 @@ img {
   grid-row: 2 / 3;
   grid-column: 1 / -1;
   padding-top: 60px;
+  padding-bottom: 67px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -231,26 +236,32 @@ img {
   width: 400px;
 }
 
+.tip h3 {
+  margin-top: 35px;
+  margin-bottom: 29px;
+}
+
 .house {
   background-image: url("../img/house.svg");
-  padding: 70px 73px 80px;
+  padding: 70px 73px 0;
 }
 
 .food {
   background-image: url("../img/food.svg");
-  padding: 70px 51px 80px;
+  padding: 70px 51px 0;
 }
 
 .souvenirs {
   background-image: url("../img/souvenir.svg");
-  padding: 70px 65px 80px;
+  padding: 70px 65px 0;
 }
 
 .picture-bridge {
   background-image: url("../img/devils-bridge.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   min-height: 256px;
-  min-width: 700px;
+  width: 800px;
   grid-row: 3 / 4;
   grid-column: 1 / -1;
 }
@@ -287,6 +298,15 @@ img {
 
 .other-reasons h3 {
   padding: 26px 47px 0;
+}
+
+.other-reasons p:nth-of-type(1) {
+  margin-top: 30px;
+  margin-bottom: 23px;
+}
+
+.other-reasons p:nth-of-type(2) {
+  margin-bottom: 52px;
 }
 
 /* Hotel search */
