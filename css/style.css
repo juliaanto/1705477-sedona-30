@@ -501,15 +501,15 @@ img {
 }
 
 .filters .infrastructure {
-  padding-left: 73px;
+  padding-left: 71px;
   text-align: left;
   min-width: 255px;
 }
 
 .infrastructure label,
 .accommodation label {
-  padding-top: 24px;
-  padding-left: 40px;
+  padding-top: 26px;
+  padding-left: 41px;
   position: relative;
   display: block;
   cursor: pointer;
@@ -579,8 +579,14 @@ img {
   border-right: 2px solid var(--basic-white);
 }
 
+.min-price input,
+.max-price input {
+  padding-left: 1px;
+  padding-right: 3px;
+}
+
 .max-price {
-  margin-left: 50px;
+  margin-left: 53px;
 }
 
 .range-filter {
@@ -659,6 +665,7 @@ img {
 
 .sorting-title {
   min-width: 115px;
+  padding-bottom: 7px;
 }
 
 .container-catalog h3 {
@@ -675,14 +682,19 @@ img {
 
 .sorting a {
   color: var(--special-black);
-  text-decoration: underline dotted var(--special-blue);
-  justify-self: left;
-  min-width: 80px;
+  /* text-decoration: underline dotted var(--special-blue); */
+  border-bottom: 1px dotted var(--special-blue);
+  margin-bottom: 6px;
+}
+
+.sorting a:nth-of-type(2),
+.sorting a:nth-of-type(3) {
+  margin-left: 33px;
 }
 
 .sorting a:hover {
   color: var(--special-blue);
-  text-decoration: underline dotted var(--special-blue);
+  /* text-decoration: underline dotted var(--special-blue); */
 }
 
 .sorting a:active {
@@ -700,6 +712,7 @@ img {
 
 .found {
   min-width: 163px;
+  padding-bottom: 1px;
 }
 
 .amount {
@@ -709,11 +722,13 @@ img {
 .asc {
   fill: var(--special-grey);
   margin-left: auto;
+  margin-top: 2px;
 }
 
 .desc {
   fill: var(--special-grey);
   margin-left: 12px;
+  margin-top: 2px;
 }
 
 .current-sorting {
@@ -729,8 +744,8 @@ img {
 .hotel {
   display: grid;
   grid-template-columns: 135px 30px 110px 5px 142px auto 110px;
-  grid-template-rows: min-content 44px 27px;
-  padding: 30px 73px 30px;
+  grid-template-rows: min-content 42px 27px;
+  padding: 23px 73px 30px;
   border-bottom: 1px solid var(--basic-neutral);
 }
 
@@ -748,14 +763,14 @@ img {
   grid-row: 2 / 3;
   grid-column: 3 / 4;
   justify-self: left;
-  margin: auto 0;
+  margin-top: 6px;
 }
 
 .hotel-price {
   grid-row: 2 / 3;
   grid-column: 5 / 6;
   justify-self: left;
-  margin: auto 0;
+  margin-top: 6px;
 }
 
 .hotel-amara .image {
@@ -777,6 +792,10 @@ img {
   background-repeat: no-repeat;
   grid-row: 1 / -1;
   grid-column: 1 / 2;
+}
+
+.image {
+  margin-top: 5px;
 }
 
 .hotels a {
@@ -822,6 +841,12 @@ img {
 .stars {
   grid-column: -1 / -2;
   justify-self: end;
+  margin-top: 5px;
+  margin-right: -4px;
+}
+
+.stars svg {
+  margin-right: 1px;
 }
 
 .rating {
