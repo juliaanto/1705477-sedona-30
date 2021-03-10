@@ -216,10 +216,6 @@ img {
 }
 
 .picture-town {
-  background-image: url("../img/town.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-width: 700px;
   grid-column: 2 / 4;
   grid-row: 1 / 2;
 }
@@ -273,11 +269,6 @@ img {
 }
 
 .picture-bridge {
-  background-image: url("../img/devils-bridge.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 256px;
-  width: 800px;
   grid-row: 3 / 4;
   grid-column: 1 / -1;
 }
@@ -771,29 +762,10 @@ img {
   margin-top: 6px;
 }
 
-.hotel-amara .image {
-  background-image: url("../img/amara-resort-spa.jpg");
-  background-repeat: no-repeat;
+.hotels img {
   grid-row: 1 / -1;
   grid-column: 1 / 2;
-}
-
-.hotel-desert .image {
-  background-image: url("../img/desert-quail-inn.jpg");
-  background-repeat: no-repeat;
-  grid-row: 1 / -1;
-  grid-column: 1 / 2;
-}
-
-.hotel-villas .image {
-  background-image: url("../img/villas-at-poco-diablo.jpg");
-  background-repeat: no-repeat;
-  grid-row: 1 / -1;
-  grid-column: 1 / 2;
-}
-
-.image {
-  margin-top: 5px;
+  align-self: end;
 }
 
 .hotels a {
