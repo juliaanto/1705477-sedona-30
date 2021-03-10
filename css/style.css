@@ -449,6 +449,7 @@ img {
   height: 38px;
   padding: 0;
   margin: 0;
+  background-color: var(--basic-extra-light);
 }
 
 .search-button {
