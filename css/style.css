@@ -549,6 +549,7 @@ img {
 
 .price-controls {
   border: 2px solid var(--basic-white);
+  border-radius: 2px;
   height: 33px;
   display: flex;
   align-items: center;
@@ -630,6 +631,7 @@ img {
   font-size: 14px;
   line-height: 1.5;
   border: 2px solid var(--basic-white);
+  border-radius: 2px;
   width: 137px;
   height: 36px;
   margin-left: 85px;
