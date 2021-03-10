@@ -677,12 +677,11 @@ img {
 
 .sorting .current-sorting {
   color: var(--special-blue);
-  text-decoration: none;
+  border: none;
 }
 
-.sorting a {
+.sorting-type {
   color: var(--special-black);
-  /* text-decoration: underline dotted var(--special-blue); */
   border-bottom: 1px dotted var(--special-blue);
   margin-bottom: 6px;
 }
@@ -694,7 +693,6 @@ img {
 
 .sorting a:hover {
   color: var(--special-blue);
-  /* text-decoration: underline dotted var(--special-blue); */
 }
 
 .sorting a:active {

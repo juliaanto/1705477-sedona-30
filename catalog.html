@@ -73,28 +73,28 @@
       </form>
       <section class="sorting">
         <h3 class="found">Найдено: <output>3</output></h3>
-        <div class="sorting-title">Сортировка:</div>
-        <a class="current-sorting" href="#">По цене</a>
-        <a href="#">По типу</a>
-        <a href="#">По рейтингу</a>
-        <div class="asc">
-          <a class="visually-hidden" href="#">По возрастанию</a>
+        <span class="sorting-title">Сортировка:</span>
+        <a class="current-sorting sorting-type" href="#">По цене</a>
+        <a class="sorting-type" href="#">По типу</a>
+        <a class="sorting-type" href="#">По рейтингу</a>
+        <a class="asc" href="#">
+          <span class="visually-hidden">По возрастанию</span>
           <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
             <path d="M5.5 0L0 10H11L5.5 0Z"/>
           </svg>
-        </div>
-        <div class="desc current-sorting">
-          <a class="visually-hidden" href="#">По убыванию</a>
+        </a>
+        <a class="desc current-sorting" href="#">
+          <span class="visually-hidden">По убыванию</span>
           <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
             <path d="M5.5 10L0 0H11"/>
           </svg>
-        </div>
+        </a>
       </section>
       <section class="hotels">
         <article class="hotel hotel-amara">
           <a class="hotel-name" href="#"><h3>Amara Resort & Spa</h3></a>
-          <div class="hotel-type">Гостиница</div>
-          <div class="hotel-price">От 4000 Р.</div>
+          <span class="hotel-type">Гостиница</span>
+          <span class="hotel-price">От 4000 Р.</span>
           <a class="more" href="#">Подробнее</a>
           <a class="book" href="#">Забронировать</a>
           <div class="stars">
@@ -111,13 +111,13 @@
               <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="var(--special-blue)"/>
             </svg>
           </div>
-          <div class="rating">Рейтинг: 8,5</div>
+          <span class="rating">Рейтинг: 8,5</span>
           <div class="image"></div>
         </article>
         <article class="hotel hotel-desert">
           <a class="hotel-name" href="#"><h3>Desert Quail Inn</h3></a>
-          <div class="hotel-type">Мотель</div>
-          <div class="hotel-price">От 3000 Р.</div>
+          <span class="hotel-type">Мотель</span>
+          <span class="hotel-price">От 3000 Р.</span>
           <a class="more" href="#">Подробнее</a>
           <a class="book" href="#">Забронировать</a>
           <div class="stars">
@@ -131,13 +131,13 @@
               <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="var(--special-blue)"/>
             </svg>
           </div>
-          <div class="rating">Рейтинг: 8,9</div>
+          <span class="rating">Рейтинг: 8,9</span>
           <div class="image"></div>
         </article>
         <article class="hotel hotel-villas">
           <a class="hotel-name" href="#"><h3>Villas at Poco Diablo</h3></a>
-          <div class="hotel-type">Апартаменты</div>
-          <div class="hotel-price">От 2000 Р.</div>
+          <span class="hotel-type">Апартаменты</span>
+          <span class="hotel-price">От 2000 Р.</span>
           <a class="more" href="#">Подробнее</a>
           <a class="book" href="#">Забронировать</a>
           <div class="stars">
@@ -148,7 +148,7 @@
               <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="var(--special-blue)"/>
             </svg>
           </div>
-          <div class="rating">Рейтинг: 9,2</div>
+          <span class="rating">Рейтинг: 9,2</span>
           <div class="image"></div>
         </article>
       </section>
