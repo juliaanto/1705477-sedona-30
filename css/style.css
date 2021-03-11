@@ -34,6 +34,8 @@
   --special-brown-hover: #604E43;
   --special-brown-active: #503E33;
   --special-grey: #CACACA;
+  --special-dark-grey: #ABABAB;
+  --special-dark-grey-transparent: rgba(171, 171, 171, 0.3);
   --special-white: rgba(255, 255, 255, 0.3);
   --special-white-footer: rgba(255, 255, 255, 0.9);
   --special-white-hover:#EBEBEB;
@@ -593,7 +595,8 @@ img {
 .range-controls {
   position: relative;
   height: 20px;
-  padding-top: 20px;
+  padding-top: 18px;
+  padding-left: 13px;
 }
 
 .range-controls .scale {
@@ -609,16 +612,20 @@ img {
 
 .range-controls .toggle {
   position: absolute;
-  top: 10px;
+  top: 9px;
   left: 0;
-  width: 4px;
-  height: 4px;
-  padding: 0;
+  padding: 2px;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  background-color: #ababab;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  background-color: var(--special-dark-grey);
+  box-shadow: 0 2px 0 0 var(--special-dark-grey-transparent);
   cursor: pointer;
+}
+
+.range-controls .toggle:hover {
+  border: 10px solid #ffffff;
+  top: 7px;
+  margin-left: -2px;
 }
 
 .range-controls .toggle-min {
