@@ -33,6 +33,8 @@
   --special-brown: #766357;
   --special-brown-hover: #604E43;
   --special-brown-active: #503E33;
+  --special-brown-disabled: #6A6A6A;
+  --special-light-brown: #A9A9A9;
   --special-grey: #CACACA;
   --special-dark-grey: #ABABAB;
   --special-dark-grey-transparent: rgba(171, 171, 171, 0.3);
@@ -413,12 +415,17 @@ img {
   width: 311px;
 }
 
-.search-date input:hover {
+.search-date input:hover,
+.person-amount input:hover {
   background-color: var(--special-white-hover);
 }
 
-.search-date input:focus {
-  background-color: var(--basic-neutral);
+.search-date input:focus,
+.person-amount input:focus {
+  background-color: var(--basic-white);
+  border: 2px solid var(--basic-neutral);
+  outline: none;
+  padding: 4px 11px;
 }
 
 .person-amount input {
@@ -436,6 +443,15 @@ img {
   padding: 0;
   margin: 0;
   background-color: var(--basic-extra-light);
+  fill: var(--special-light-brown);
+}
+
+.form-button:hover {
+  fill: var(--basic-black);
+}
+
+.form-button:active {
+  fill: var(--special-blue);
 }
 
 .search-button {
@@ -453,6 +469,7 @@ img {
 .search-button:active {
   background-color: var(--special-blue-active);
   color: var(--special-white);
+  outline: none;
 }
 
 /* Catalog */
@@ -509,6 +526,10 @@ img {
   border-radius: 3px;
 }
 
+.filter-input-checkbox:disabled + label::before {
+  border-color: var(--special-brown-disabled);
+}
+
 .filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
@@ -519,6 +540,10 @@ img {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.filter-input-checkbox:disabled + label::after {
+  background-image: url("../img/checkbox-on-disabled.svg");
 }
 
 .accommodation {
@@ -889,6 +914,10 @@ img {
 
 .social-button:active rect {
   fill: var(--special-blue-active);
+}
+
+.social-button:active path {
+  fill: var(--special-white);
 }
 
 .footer-copyright {
