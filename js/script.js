@@ -1,6 +1,8 @@
 let formButton = document.querySelector('.show-form-button');
 let searchForm = document.querySelector('.hotel-search-form');
 
-formButton.onclick = function() {
-    searchForm.classList.toggle('visually-hidden');
-};
+searchForm.classList.add('hidden');
+
+formButton.addEventListener('click', (e) => {
+    searchForm.classList.toggle('hidden');
+});

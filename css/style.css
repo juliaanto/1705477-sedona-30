@@ -343,6 +343,7 @@ img {
   background-color: var(--special-brown);
   padding: 30px 125px;
   width: 568px;
+  cursor: pointer;
 }
 
 .show-form-button:hover {
@@ -362,6 +363,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .map {
@@ -389,6 +391,13 @@ img {
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
   z-index: 1;
   margin-bottom: -395px;
+  transform: translateY(0);
+  transition: 0.5s;
+}
+
+.hidden {
+  transform: translateY(-100%);
+  transition: 0s;
 }
 
 .search-date,
@@ -444,6 +453,7 @@ img {
   margin: 0;
   background-color: var(--basic-extra-light);
   fill: var(--special-light-brown);
+  cursor: pointer;
 }
 
 .form-button:hover {
@@ -460,6 +470,7 @@ img {
   width: 458px;
   height: 58px;
   align-self: flex-end;
+  cursor: pointer;
 }
 
 .search-button:hover {
@@ -483,7 +494,7 @@ img {
   background: var(--special-brown) url("../img/background.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  margin-top: -74px;
+  margin-top: -75px;
 }
 
 .filters fieldset {
@@ -496,11 +507,11 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  padding-top: 27px;
+  padding-top: 25px;
 }
 
 .filters .infrastructure {
-  padding-left: 71px;
+  padding-left: 72px;
   text-align: left;
   min-width: 255px;
 }
@@ -533,7 +544,7 @@ img {
 .filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
-  top: 24px;
+  top: 25px;
   left: 0;
   width: 27px;
   height: 23px;
@@ -605,7 +616,7 @@ img {
 .range-controls {
   position: relative;
   height: 20px;
-  padding-top: 18px;
+  padding-top: 21px;
   padding-left: 13px;
 }
 
@@ -656,7 +667,8 @@ img {
   width: 137px;
   height: 36px;
   margin-left: 85px;
-  margin-top: 13px;
+  margin-top: 15px;
+  cursor: pointer;
 }
 
 .filter-button:hover {
@@ -868,6 +880,7 @@ img {
   margin-top: -120px;
   background-color: var(--special-white-footer);
   min-height: 120px;
+  z-index: 1;
 }
 
 .catalog-footer {
