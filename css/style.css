@@ -911,9 +911,9 @@ img {
   font-size: 21px;
   color: var(--basic-black);
   line-height: 1.24;
-  width: 472px;
   align-self: flex-start;
   margin-top: 22px;
+  margin-left: 125px;
 }
 
 .footer-contacts div:last-child {
@@ -925,14 +925,13 @@ img {
 }
 
 .footer-social {
-  width: 190px;
-  margin-left: 8px;
+  margin-top: 3px;
 }
 
 .footer-social a {
   width: 46px;
   height: 48px;
-  padding: 0 1px;
+  margin: 1px;
 }
 
 .social-button:hover rect {
@@ -953,6 +952,7 @@ img {
   display: flex;
   justify-content: center;
   margin-right: 138px;
+  margin-left: 4px;
 }
 
 .footer-copyright span {
