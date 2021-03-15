@@ -224,6 +224,8 @@ img {
 .picture-town {
   grid-column: 2 / 4;
   grid-row: 1 / 2;
+  height: 100%;
+  object-fit: cover;
 }
 
 .container-index h3 {
@@ -286,6 +288,8 @@ img {
 .picture-bridge {
   grid-row: 3 / 4;
   grid-column: 1 / -1;
+  height: 100%;
+  object-fit: cover;
 }
 
 .second-reason {
@@ -305,6 +309,7 @@ img {
   grid-row: 4 / 5;
   grid-column: 1 / -1;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   background-color: var(--basic-light);
 }
@@ -347,7 +352,7 @@ img {
 
 .show-form-button {
   background-color: var(--special-brown);
-  padding: 30px 125px;
+  padding: 30px 10px;
   width: 568px;
   cursor: pointer;
 }
@@ -392,7 +397,8 @@ img {
   min-height: 395px;
   padding: 55px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
   background-color: var(--basic-white);
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
   z-index: 1;
@@ -411,8 +417,8 @@ img {
   width: 100%;
   display: flex;
   align-items: center;
-  margin-bottom: 4px;
-  height: 38px;
+  margin-bottom: 30px;
+  height: min-content;
 }
 
 .form-first-column {
@@ -472,10 +478,9 @@ img {
 
 .search-button {
   background-color: var(--special-blue);
-  padding: 16px 182px;
+  margin-top: 24px;
+  padding: 16px 10px;
   width: 458px;
-  height: 58px;
-  align-self: flex-end;
   cursor: pointer;
 }
 
@@ -496,11 +501,12 @@ img {
 .filters {
   color: var(--basic-white);
   display: flex;
-  height: 217px;
   background: var(--special-brown-hover) url("../img/background.jpg");
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: cover;
   margin-top: -75px;
+  padding: 25px 72px 31px 72px;
 }
 
 .filters fieldset {
@@ -513,11 +519,9 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  padding-top: 25px;
 }
 
 .filters .infrastructure {
-  padding-left: 72px;
   text-align: left;
   min-width: 255px;
 }
@@ -579,14 +583,13 @@ img {
 
 .price {
   text-align: left;
-  margin-right: 73px;
   margin-left: auto;
   width: 317px;
   height: 36px;
 }
 
 .price legend {
-  margin-bottom: 11px;
+  margin-bottom: 12px;
 }
 
 .price-controls {
@@ -679,11 +682,12 @@ img {
   line-height: 1.5;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
-  width: 137px;
-  height: 36px;
-  margin-left: 85px;
   margin-top: 15px;
   cursor: pointer;
+  align-self: center;
+  position: relative;
+  right: 6px;
+  padding: 5px 33px;
 }
 
 .filter-button:hover {
@@ -696,17 +700,15 @@ img {
 .sorting {
   font-size: 12px;
   color: var(--basic-black);
-  margin-left: 73px;
-  margin-right: 73px;
+  margin: 31px 73px 30px;
   display: flex;
-  min-height: 86px;
-  align-items: center;
+  flex-wrap: wrap;
   text-align: left;
 }
 
 .sorting-title {
   min-width: 115px;
-  padding-bottom: 7px;
+  margin: 0;
 }
 
 .container-catalog h3 {
@@ -724,12 +726,8 @@ img {
 .sorting-type {
   color: var(--special-black);
   border-bottom: 1px dotted var(--special-blue);
-  margin-bottom: 6px;
-}
-
-.sorting a:nth-of-type(2),
-.sorting a:nth-of-type(3) {
-  margin-left: 33px;
+  margin: 0 33px 0 0;
+  align-self: flex-start;
 }
 
 .sorting a:hover {
@@ -749,9 +747,9 @@ img {
   fill: var(--special-blue);
 }
 
-.found {
-  min-width: 163px;
-  padding-bottom: 1px;
+.sorting .found {
+  margin-right: 46px;
+  margin-top: -1px;
 }
 
 .amount {
@@ -761,13 +759,13 @@ img {
 .asc {
   fill: var(--special-grey);
   margin-left: auto;
-  margin-top: 2px;
+  margin-top: 5px;
 }
 
 .desc {
   fill: var(--special-grey);
   margin-left: 12px;
-  margin-top: 2px;
+  margin-top: 5px;
 }
 
 .current-sorting {
@@ -782,8 +780,8 @@ img {
 
 .hotel {
   display: grid;
-  grid-template-columns: 135px 30px 110px 5px 142px auto 110px;
-  grid-template-rows: min-content 42px 27px;
+  grid-template-columns: 135px 30px min-content 5px 142px auto 110px;
+  grid-template-rows: repeat(3, min-content);
   padding: 23px 73px 30px;
   border-bottom: 1px solid var(--basic-neutral);
 }
@@ -801,8 +799,10 @@ img {
 .hotel-type {
   grid-row: 2 / 3;
   grid-column: 3 / 4;
-  justify-self: left;
+  text-align: start;
   margin-top: 6px;
+  margin-bottom: 15px;
+  min-width: 110px;
 }
 
 .hotel-price {
@@ -828,8 +828,8 @@ img {
   padding: 3px 16px;
   grid-row: -1 / -2;
   grid-column: 3 / 4;
-  margin: auto;
   justify-self: start;
+  margin: auto 0;
 }
 
 .more:hover {
@@ -925,7 +925,6 @@ img {
 }
 
 .footer-social {
-  height: 48px;
   width: 190px;
   margin-left: 8px;
 }
