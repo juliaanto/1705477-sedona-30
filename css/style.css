@@ -950,9 +950,9 @@ img {
 .footer-copyright {
   line-height: 1.86;
   color: var(--basic-black);
-  width: 480px;
   display: flex;
   justify-content: center;
+  margin-right: 138px;
 }
 
 .footer-copyright span {
