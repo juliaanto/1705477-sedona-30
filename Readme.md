@@ -3,7 +3,7 @@ Sedona is an accommodation search in a small American Arizona town.
 
 
 ## General Information
-Sedona is an educational project implemented while studying at a professional online course [“HTML and CSS. Professional website layout”](https://htmlacademy.ru/intensive/htmlcss) from [HTML Academy](https://htmlacademy.ru/). 
+Sedona is an educational project implemented while studying at a professional online course [HTML and CSS. Professional website layout](https://htmlacademy.ru/intensive/htmlcss) from [HTML Academy](https://htmlacademy.ru/). 
 This is my first project, do not judge strictly :)
 
 
